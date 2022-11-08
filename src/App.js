@@ -30,33 +30,14 @@ const App = () => {
         )
       })
       console.log("vowelsArray:", vowelsArray)
-      // let new1 = () => {
-      //   if (vowelsArray.indexOf(0)`${eachWord}way`
-      // return new1
-      // }
        
-        let newLatinVowel = eachWord.search(/[a,e,i,o,u,A,E,I,O,U]/)
-        return `${eachWord}way`
-        
-        // let firstIndexVowel = (eachWord) => {
-        
-        //   return `${eachWord}way`
-          
-        // }
-        // console.log(firstIndexVowel)
-      
-
-        // let firstIndexVowel = () => {
-        //   if (eachWord.indexof(0) = ["a, e, i, o, u"]) {
-        //     return `${eachWord}way`
-        //     }
-        //   }
-      
-        // if (vowelsArray.indexOf([0])) {
-      //   return eachWord+"way"
-
-      // }
-    }
+        //Given the word Austin
+        //conditional statement that checks if first letter of the word mathes a the first vowel of vowelsArray
+        //return eachWord plus way
+        //
+        if (eachWord[0] === vowelsArray[0]){
+          return eachWord + "way"
+        }
 
       // ACTION ITEM: your Pig Latin logic goes here!
       // Can type any word that begins with a vowel in the text input (e.g. apple)
@@ -69,8 +50,8 @@ const App = () => {
       
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      // return eachWord
-
+    return eachWord
+    }
     )
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
