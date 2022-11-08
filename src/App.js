@@ -32,9 +32,31 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-
-    
-
+      // We need an else if statement (conditionals) that will take in a word that starts with "qu" in the first syllable and then returns that word with "first syllable and "ay"
+        //input: queen squeal
+        //out: eenquay    ealsquay
+        // Were going to use .indexOf("u")to first identify the location of "u".
+        //we will subtract -1 as it relates to indexes to see if it is set to the index of "q"
+          //Will also have to create another variable in the event there is another const that precedes q
+        //then return the new variables added together + "ay"
+        // Using slice to remove all values to the left of the "u", index will start at 0
+        //Establish variable names for new conditional statements: newWord1 and newWord2  
+        //Take a word that has no vowels other than "y" and adds the letters before y to the end and add ay
+        //to identify y we will find the indexOf y
+        //slice eachword from the zero index until index that is before y
+        // another else if statement
+        //new variable newWord3
+      if(eachWord[0] === vowelsArray[0]) {
+        return eachWord + "way"}
+        else if(eachWord.indexOf("u") -1 === eachWord.indexOf("q")){
+        let newWord1 = eachWord.slice(0, eachWord.indexOf("u") + 1)
+        let newWord2 = eachWord.slice(eachWord.indexOf("u") + 1)
+        return newWord2 + newWord1 + "ay"
+      }else if(eachWord.indexOf("y") !== eachWord.indexOf[0]){
+        let newWord3 = eachWord.slice(0, eachWord.indexOf("y")) 
+        let newWord4 = eachWord.slice(eachWord.indexOf("y"))
+       return newWord4 + newWord3 + "ay"
+      }
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
       return eachWord
     })
