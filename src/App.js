@@ -30,29 +30,6 @@ const App = () => {
         )
       })
       console.log("vowelsArray:", vowelsArray)
-       
-        //Given the word Austin
-        //conditional statement that checks if first letter of the word mathes a the first vowel of vowelsArray
-        //return eachWord plus way
-        //
-        if (eachWord[0] === vowelsArray[0]){
-          return eachWord + "way"
-        }
-
-      // ACTION ITEM: your Pig Latin logic goes here!
-      // Can type any word that begins with a vowel in the text input (e.g. apple)
-      // .forEach 
-      // Attached to the end and add "way"
-      // Can hit the submit button
-        // add a button (onClick to activate functionality)
-        // Every time the button is clicked: 
-      // Can see the words that begin with a vowel translated to Pig Latin and rendered to the page (e.g. appleway)
-      
-
-      // ACTION ITEM: this return will be the output of your Pig Latin'd code
-    return eachWord
-    }
-    )
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
