@@ -31,6 +31,7 @@ const App = () => {
       })
       console.log("vowelsArray:", vowelsArray)
 
+
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
     console.log("translatedWords:", translatedWords)
